@@ -8,27 +8,33 @@ Included in this application are:
     * using a FOR loop to create each row and three boxes which contain the current hour, a textarea and a save button
     * using event delegation to save the text area and save it to local storage
 
-* High Scores Page
-    * using local storage to save the last score and the name and then Getting local storage to display the top 5 high scores
+*  LocalStorage saving
+     * using local storage to save the last score and the name and then Getting local storage to display the top 5 high scores
 
 
 
 Challenges I encountered
-* formatting was a big challenge, makeing sure all my elements appeared at the right time and the right spot was something that was very challenging
-*Starting the game felt easy, but ending the game was more challenging. the way I solved it was creating a variable that set the amount of questions remaining to the # question that the user was currently answering. When that was set to 0, the game would end and immediately go to the end.html; also the end timeout section was had a part of the function that would take the user to the end.html when the timer made it to " <= 0 "
-
+* Setting the correct local storage
+     * The challenge was getting the correct text area to connect to the right save icon - I solved the problem by grabbing the id of the save icon, which was the same number from the original FOR loop as the text area, then added it to the text area that I wanted to save the text from; then upon refresh or re-load I would grab the local storage and bring it back into the correct text area 
+*  Event listener listening correctly
+     * I originally created the event lister at the row div for each row, but I couldn't tunnel into the save icon without adding a lot of code, so I ended up adding the event listner to the div which contained the icon only and that cleaned up my code and simplified everything
+     
+     
 ## Credits
 Many thanks to the below individuals who provided input, suggestions, or played a "rubber ducky" role
 * Chris Martinez
 * Mim Armand
 * Kat Poulos
+* Mark Artim
+* Ian Fletcher
 
-Sources used for significant help:
-I used one blog post and two youtube videos for significant help in the process
 
-* [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k)
-* [Brian Design](https://www.youtube.com/watch?v=f4fB9Xg2JEY)
-* [SitePoint - Build a Javascript Quiz](https://www.sitepoint.com/simple-javascript-quiz/)
+Sources used for help:
+
+* [Bootstrap Documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+* [W3 School](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
+* [Mozilla Help Pages](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [JQuery Documentation](https://api.jquery.com/)
 
 If any additional issues are found, or if there are any suggestions for improvement, please send an email to site developer Jay Yousef at jay.yousef@gmail.com
 
@@ -52,12 +58,12 @@ If any additional issues are found, or if there are any suggestions for improvem
 3. After downloading, open the .zip file and select "Extract All" from the top of the window that appears
 4. Access the content with your code editor by selecting `File > Open Folder` in your code editor menu. If only viewing in a browser, simply double click index.html to open in your default browser
 
-[Link to Live Javascript Quiz Application](https://jayyousef.github.io/javascript_quiz_ultimate_champion/)
+[Link to Live Calendar Application](https://jayyousef.github.io/daily_calendar_jquery/)
 
 ---
 
-These updates are covered under [GNU General Public License v3.0](./assets/GNU_Public_License)
+These updates are covered under [GNU General Public License v3.0](./Assets/GNU_Public_License)
 
 ## Screenshot below:
 
-<img src="./assets/quiz-game-screenshot.png>
+<img src="./Assets/calendar_application_img.png>
